@@ -11,6 +11,8 @@ public class Inventory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(name = "gbgf")
+    private String gbgf;
     @Column(name = "manager_name")
     private String managerName;
     @Column(name = "legal_entity")
@@ -42,6 +44,14 @@ public class Inventory {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getGbgf() {
+        return gbgf;
+    }
+
+    public void setGbgf(String gbgf) {
+        this.gbgf = gbgf;
     }
 
     public String getManagerName() {

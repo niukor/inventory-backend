@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/inventories")
-@CrossOrigin(origins = "http://118.31.3.45:3000")
+@CrossOrigin(origins = "http://localhost:3000")
 public class InventoryController {
     @Autowired
     private InventoryRepository inventoryRepository;

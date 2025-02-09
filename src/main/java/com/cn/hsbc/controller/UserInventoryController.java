@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/user-inventories")
-@CrossOrigin(origins = "http://118.31.3.45:3000")
+@CrossOrigin(origins = "http://localhost:3000")
 public class UserInventoryController {
     @Autowired
     private UserInventoryRepository userInventoryRepository;
