@@ -8,6 +8,7 @@ CREATE TABLE userinfo (
 -- 创建库存表
 CREATE TABLE inventory (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    gbgf VARCHAR(255),
     manager_name VARCHAR(255),
     legal_entity VARCHAR(255),
     owner_id VARCHAR(255),
@@ -33,9 +34,9 @@ CREATE TABLE user_inventory (
 );
 
 
-INSERT INTO userinfo (username, password) VALUES ('test_user', 'test_password');
+INSERT INTO userinfo (username, password) VALUES ('44040850', '44040850');
 
-INSERT INTO inventory (manager_name, legal_entity, owner_id, name, empl_class, brand, model, imei_meid, device_type, asset_id, inventory_check, remark)
-VALUES ('John Doe', 'ABC Company', '12345', 'Sample Device', 'Full - time', 'Brand X', 'Model Y', 'IMEI123456', 'Laptop', 'ASSET001', 'Checked', 'No issues');
+INSERT INTO inventory (gbgf,manager_name, legal_entity, owner_id, name, empl_class, brand, model, imei_meid, device_type, asset_id, inventory_check, remark, confirm)
+VALUES ('CTO', 'John Doe', 'ABC Company', '12345', 'Sample Device', 'Full - time', 'Brand X', 'Model Y', 'IMEI123456', 'Laptop', 'ASSET001', 'Checked', 'No issues', 'false');
 
 INSERT INTO user_inventory (user_id, inventory_id) VALUES (1, 1);
